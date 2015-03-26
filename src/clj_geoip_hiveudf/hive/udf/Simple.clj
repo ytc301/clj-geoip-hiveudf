@@ -1,7 +1,6 @@
 (ns clj-geoip-hiveudf.hive.udf.simple
   (:import [org.apache.hadoop.hive.ql.exec UDF]
            [org.apache.hadoop.io Text])
-  (:require [clj-geoip-hiveudf.core :refer [hello-clj-geoip-hiveudf goodbye-clj-geoip-hiveudf]])
   (:gen-class
    :name clj-geoip-hiveudf.hive.udf.Simple
    :extends org.apache.hadoop.hive.ql.exec.UDF
