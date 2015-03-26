@@ -13,26 +13,8 @@ hive> create temporary function geoip as 'clj-geoip-hiveudf.hive.udf.Simple';
 
 ## Testing
 
-This project uses the [Speclj BDD testing framework](http://speclj.com/).
-
-Write your tests first in `spec/clj-geoip-hiveudf/core_spec.clj`, run them expecting them to
-fail, then implement your test-passing functions in `src/clj-geoip-hiveudf/core.clj`. Always
-do this, running your tests on a regular rhythm along with your production code:
-
-```bash
-→ lein spec --reporter=d
-Compiling clj-geoip-hiveudf.core
-Compiling clj-geoip-hiveudf.hive.udf.Simple
-
-Salutation
-- should be warmly welcoming to Bob Dobbs
-
-Valediction
-- should be wistfully leave-taking of Bob Dobbs
-
-Finished in 0.00035 seconds
-2 examples, 0 failures
-```
+This project is a wrapper around another author's core library, and he's already
+provided test coverage for `clj-geoip` itself.
 
 ## Future / Enhancements
 
